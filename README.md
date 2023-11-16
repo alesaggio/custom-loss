@@ -1,3 +1,5 @@
+[![Custom Loss](https://github.com/alesaggio/custom-loss/actions/workflows/main.yml/badge.svg)](https://github.com/alesaggio/custom-loss/actions/workflows/main.yml)
+
 # Custom loss function for sales forecasting
 
 This code trains a simple model for sales forecasting, and implements a customized loss function for the task at hand. It also outputs plots that help gain more insights about the problem and the model's performance (locaed in the `plots` folder).
