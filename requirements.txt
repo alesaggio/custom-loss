@@ -1,0 +1,8 @@
+pylint
+pytest
+black
+pytest-cov
+torch
+numpy
+matplotlib
+pandas
