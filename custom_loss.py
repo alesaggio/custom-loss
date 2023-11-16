@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, random_split
 
-from plot_functions import plot_features, plot_loss_vs_epochs, plot_loss_vs_param
+from plotting_functions import plot_features, plot_loss_vs_epochs, plot_loss_vs_param
 
 
 # Define the loss function
@@ -151,10 +151,15 @@ if __name__ == "__main__":
     mse_custom = forecast_loss(predictions_custom, sales_test, stocks_test)
 
     print("Accuracy on the model trained with MSE: ", round(mse_original.item(), 3))
-    print("Accuracy on the model trained with custom loss: ", round(mse_custom.item(), 3))
+    print(
+        "Accuracy on the model trained with custom loss: ", round(mse_custom.item(), 3)
+    )
 
     print("Parameter of the model trained with MSE: ", round(optimal_param_mse, 3))
-    print("Parameter of the model trained with custom loss", round(optimal_param_custom, 3))
+    print(
+        "Parameter of the model trained with custom loss",
+        round(optimal_param_custom, 3),
+    )
 
     # Plot loss as a function of the parameter, to see that the minimum corresponds to the trained model's parameter
     loss_mse_values = []
